@@ -3,20 +3,23 @@
 This Java template lets you get started quickly with a simple one-page playground.
 
 ```java runnable
-// { autofold
-public class Main {
 
-public static void main(String[] args) {
-// }
+public enum Singleton {
 
-String message = "Hello Worldd!";
-System.out.println(message);
+	INSTANCE;
 
-//{ autofold
-}
+	public void doProcess() {
+		System.out.println("Do high memory or CPU consume operation.");
+	}
 
 }
-//}
+
+class Main {
+
+	public static void main(String[] args) {
+		Singleton.INSTANCE.doProcess();
+	}
+}
 ```
 
 # Advanced usage
